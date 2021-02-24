@@ -25,6 +25,9 @@
 [submodule "generators/hwacha"]
 	path = generators/hwacha
 	url = https://github.com/ucb-bar/hwacha.git
+[submodule "generators/sodla"]
+	path = generators/sodla
+	url = https://github.com/palladio-patch/soDLA.git
 [submodule "sims/firesim"]
 	path = sims/firesim
 	url = https://github.com/firesim/firesim.git
