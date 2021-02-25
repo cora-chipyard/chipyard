@@ -6,6 +6,10 @@
 
 To get started using Chipyard, see the documentation on the Chipyard documentation site: https://chipyard.readthedocs.io/
 
+## Build soDLA In Chipyard
+cd sims/vcs
+make debug -j8 CONFIG=SmallSODLARocketConfig
+
 ## What is Chipyard
 
 Chipyard is an open source framework for agile development of Chisel-based systems-on-chip.
