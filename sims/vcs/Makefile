@@ -39,7 +39,7 @@ include $(base_dir)/common.mk
 #########################################################################################
 # vcs binary and arguments
 #########################################################################################
-VCS = vcs -full64
+VCS = vcs -full64 -cpp g++-4.8 -cc gcc-4.8 -LDFLAGS -Wl,--no-as-needed
 
 VCS_OPTS = $(VCS_CC_OPTS) $(VCS_NONCC_OPTS) $(PREPROC_DEFINES)
 
