@@ -8,6 +8,7 @@ To get started using Chipyard, see the documentation on the Chipyard documentati
 
 ## Build soDLA In Chipyard
 cd sims/vcs
+
 make debug -j8 CONFIG=SmallSODLARocketConfig
 
 ## What is Chipyard
