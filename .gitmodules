@@ -28,6 +28,9 @@
 [submodule "generators/soDLA"]
 	path = generators/soDLA
 	url = https://github.com/palladio-patch/soDLA.git
+[submodule "generators/cora"]
+	path = generators/cora
+	url = https://github.com/palladio-patch/cora.git
 [submodule "sims/firesim"]
 	path = sims/firesim
 	url = https://github.com/firesim/firesim.git
