@@ -186,7 +186,7 @@ lazy val chipyard = (project in file("generators/chipyard"))
   .dependsOn(rocketchip, boom, hwacha, sifive_blocks, sifive_cache, utilities, iocell,
     sha3, // On separate line to allow for cleaner tutorial-setup patches
     dsptools, `rocket-dsptools`,
-    gemmini, icenet, tracegen, cva6, sodla, nvdla, sodor)
+    gemmini, icenet, tracegen, cva6, sodla, cora, nvdla, sodor)
   .settings(libraryDependencies ++= rocketLibDeps.value)
   .settings(commonSettings)
 
@@ -241,6 +241,11 @@ lazy val gemmini = (project in file("generators/gemmini"))
   .settings(commonSettings)
 
 lazy val nvdla = (project in file("generators/nvdla"))
+  .dependsOn(rocketchip)
+  .settings(libraryDependencies ++= rocketLibDeps.value)
+  .settings(commonSettings)
+
+lazy val cora = (project in file("generators/cora/smod"))
   .dependsOn(rocketchip)
   .settings(libraryDependencies ++= rocketLibDeps.value)
   .settings(commonSettings)
