@@ -251,7 +251,7 @@ lazy val cora = (project in file("generators/cora/smod"))
   .settings(commonSettings)
 
 lazy val cora_wrapper = (project in file("generators/cora/chipyard-wrapper"))
-  .dependsOn(rocketchip)
+  .dependsOn(rocketchip, cora)
   .settings(libraryDependencies ++= rocketLibDeps.value)
   .settings(commonSettings)
 
